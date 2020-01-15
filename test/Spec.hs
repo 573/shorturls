@@ -7,3 +7,4 @@ main :: IO (Either Hedis.Reply Hedis.Status)
 main = do
   conn <- Hedis.connect Hedis.defaultConnectInfo
   Hedis.runRedis conn Hedis.ping
+
